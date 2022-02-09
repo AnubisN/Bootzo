@@ -1,0 +1,451 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Castoro', serif !important;
+    font-family: 'EB Garamond', serif !important;
+}
+
+.btn-mt {
+    margin-top: 1em;
+}
+
+.span {
+    color: #EBAB4E;
+}
+
+.btn {
+    position: relative;
+    padding: 15px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    color: #fff;
+    background: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.btn:before {
+    content: '';
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    background: rgba(235, 171, 78,.7);
+    top: 0;
+    left: 0;
+    transition: all 500ms ease;
+}
+
+.btn:hover::before {
+    width: 100%;
+}
+
+.nav-btn {
+    height: 40px;
+    position: relative;
+    font-size: 16px;
+    color: #fff;
+    background: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    text-align: center;
+}
+
+.nav-btn:before {
+    content: '';
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    background: rgba(235, 171, 78,.6);
+    top: 0;
+    left: 0;
+    transition: all 500ms ease;
+}
+
+.nav-btn:hover::before {
+    width: 100%;
+}
+
+.nav-btn:hover {
+    color: #fff;
+}
+
+.btn-nav {
+    width: 105px;
+    padding: 2px 10px;
+    height: 40px;
+    margin-left: 9px;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.mr {
+    margin-right: 5px;
+}
+
+body {
+    background: #000;
+}
+
+.navbar {
+    background: #000 !important;
+}
+
+.navbar-brand {
+    color: #fff !important;
+    font-size: 1.8rem !important;
+    font-weight: bold !important;
+}
+
+.nav-link {
+    color: #fff !important;
+    font-size: 1rem !important;
+    font-weight: bold;
+    margin: 0 4px !important;
+    margin-right: 0px !important;
+}
+
+.navbar-toggler {
+    background: #fff !important;
+    color: #000 !important;
+}
+
+.container {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.hero-container {
+    width: 100%;
+    max-height: 100vh;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.hero h1 {
+    width: 100%;
+    font-weight: 600;
+    color: #fff;
+    font-size: 2rem;
+    margin-bottom: 0.4em;
+}
+
+.hero p {
+    font-weight: 600;
+    color: #fff;
+    font-size: 1rem;
+    white-space: pre-line;
+    margin-bottom: 0.6em;
+}
+
+@media screen and (min-width: 401px) {
+    .hero h1 {
+        font-size: 2.2rem;
+    }
+
+    .hero p {
+        font-size: 1.2rem;
+    }
+
+    .btn {
+        width: 200px;
+        position: relative;
+        padding: 15px;
+        font-size: 16px;
+        letter-spacing: 1px;
+        color: #fff;
+        background: transparent;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        text-transform: uppercase;
+    }
+    
+    .btn:before {
+        content: '';
+        position: absolute;
+        width: 50%;
+        height: 100%;
+        background: rgba(235, 171, 78,.6);
+        top: 0;
+        left: 0;
+        transition: all 500ms ease;
+    }
+    
+    .btn:hover::before {
+        width: 100%;
+    }
+
+    .btn:hover {
+        color: #fff;
+    }
+    
+}
+
+@media screen and (min-width: 826px) {
+    .container {
+        width: 90%;
+        max-width: 90%;
+        margin: 0 auto;
+    }
+
+    .hero h1 {
+        font-size: 4.2rem;
+    }
+
+    .hero p {
+        font-size: 1.2rem;
+    }
+    
+    .btn {
+        width: 260px;
+        position: relative;
+        padding: 15px;
+        font-size: 16px;
+        letter-spacing: 1px;
+        color: #fff;
+        background: transparent;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        text-transform: uppercase;
+    }
+    
+    .btn:before {
+        content: '';
+        position: absolute;
+        width: 50%;
+        height: 100%;
+        background: rgba(235, 171, 78,.6);
+        top: 0;
+        left: 0;
+        transition: all 500ms ease;
+    }
+    
+    .btn:hover::before {
+        width: 100%;
+    }
+
+    .btn:hover {
+        color: #fff;
+    }
+    
+}
+
+.section-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1.5em 0;
+    margin-top: 0;
+    text-align: center;
+}
+
+
+.services-container {
+    color: #fff;
+    font-weight: 400;
+    font-size: 1.2rem;
+    padding: 4em 0;
+}
+
+.services-container h2 {
+    font-size: 2.4rem;
+    margin-bottom: 1em;
+}
+
+.services-container-each {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.services {
+    margin-bottom: 3em;
+    width: 320px;
+    background: linear-gradient(#202020,#000);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border-radius: 10px;
+    transition: all .2s ease-in;
+}
+
+.services-icon-container {
+    margin: 1.5em 0;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: #000;
+    padding: 1em;
+}
+
+.services-icon-container-img {
+    filter: invert(78%) sepia(53%) saturate(681%) hue-rotate(329deg) brightness(98%) contrast(88%);
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.services-content-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.services-content-container h3{
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+.services-content-container-lastheading {
+    margin-bottom: 20px;
+}
+
+.services-content-container p{
+    margin-bottom: 10px;
+    font-weight: 400;
+}
+
+
+.services:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+    box-shadow: 0 0 15px #EBAB4E;
+}
+
+@media screen and (min-width: 663px) {
+    .services-container h2 {
+        font-size: 3.5rem;
+        margin-bottom: 1em;
+    }    
+
+    .services-container-each {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .services {
+        margin-bottom: 1.8em;
+        width: 320px;
+        background: linear-gradient(#202020,#000);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        border-radius: 10px;
+        transition: all .2s ease-in;
+    }
+}
+
+
+/*contact us */
+.services-container form {
+    margin-top: 60px;
+    margin-left: -15px;
+    margin-right: -15px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.services-container form input,
+.services-container form textarea {
+    width: 100%;
+    padding: 15px 0;
+    color: #fff;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #353535;
+    font-weight: 400;
+}
+
+.services-container form .input-field {
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 25px;
+}
+
+.services-container form input::placeholder,
+.services-container form textarea::placeholder {
+    font-size: 15px;
+    font-weight: 400;
+    color: #fff;
+}
+
+.services-container form .username {
+    flex: 0 0 50%;
+    max-width: 50%;
+    padding-right: 15px;
+}
+
+.services-container form .subject {
+    flex: 0 0 50%;
+    max-width: 50%;
+    padding-left: 15px;
+}
+
+.services-container form .input-field textarea {
+    height: 120px;
+    resize: vertical;
+}
+
+.services-container form .ctn-btn {
+    position: relative;
+    padding: 15px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    color: #fff;
+    background: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.services-container form .ctn-btn:before {
+    content: '';
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    background: rgba(235, 171, 78,.7);
+    top: 0;
+    left: 0;
+    transition: all 500ms ease;
+}
+
+.services-container form .ctn-btn:hover::before {
+    width: 100%;
+}
+
+@media (max-width: 945px) {
+    .services-container form {
+        margin: 0 1em;
+    }
+
+    .services-container form .username,
+    .services-container form .subject {
+        flex: 0 0 100%;
+        max-width: 100%;
+        padding: 0;
+    }
+}
