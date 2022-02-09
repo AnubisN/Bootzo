@@ -109,7 +109,7 @@ body {
 }
 
 .navbar-toggler {
-    background: #fff !important;
+    background: #EBAB4E !important;
     color: #000 !important;
 }
 
@@ -375,7 +375,7 @@ body {
     color: #fff;
     background: transparent;
     border: none;
-    border-bottom: 1px solid #353535;
+    border-bottom: 1px solid #adacac;
     font-weight: 400;
 }
 
