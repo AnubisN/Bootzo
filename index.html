@@ -160,5 +160,57 @@
                 <button type="submit" class="ctn-btn">SEND MESSAGE</button>
             </form>
     </section>
+
+    <section class="container">
+        <div class="services-container">
+            <div class="section-title">
+                <p>
+                    __________<br/>Client Reviews
+                </p>
+                <h2>What our clients say.</h2>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-md-6 testi-img">
+                    <div class="img-box">
+                      <div class="circle"></div>
+                      <div class="img-box-inner">
+                        <img src="./images/testimonial/1.png" alt="testi img">
+                      </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                          <div class="carousel-item testi-item active" data-img="./images/testimonial/1.png">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non nobis ratione, harum doloremque aspernatur aliquid quaerat dolores voluptates recusandae qui repellat illum, amet ipsa debitis fugiat commodi nemo suscipit ad!</p>
+                            <h3>john doe - <span>web developer</span></h3>
+                          </div>
+                          <div class="carousel-item testi-item" data-img="./images/testimonial/2.png">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non nobis ratione, harum doloremque aspernatur aliquid quaerat dolores voluptates recusandae qui repellat illum, amet ipsa debitis fugiat commodi nemo suscipit ad!</p>
+                            <h3>john doe - <span>web developer</span></h3>
+                          </div>
+                          <div class="carousel-item testi-item" data-img="./images/testimonial/3.png">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non nobis ratione, harum doloremque aspernatur aliquid quaerat dolores voluptates recusandae qui repellat illum, amet ipsa debitis fugiat commodi nemo suscipit ad!</p>
+                            <h3>john doe - <span>web developer</span></h3>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+            </div>
+
+    </section>
+
 </body>
+    <script>
+        const myCarousel = document.getElementById('myCarousel')
+        myCarousel.addEventListener('slid.bs.carousel', function () {
+            const activeItem = this.querySelectorAll(".active")[1];
+            document.querySelector(".testi-img img").src = activeItem.getAttribute("data-img");
+  })
+    </script>
 </html> 
