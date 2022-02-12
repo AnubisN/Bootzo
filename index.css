@@ -362,8 +362,6 @@ body {
 /*contact us */
 .services-container form {
     margin-top: 60px;
-    margin-left: -15px;
-    margin-right: -15px;
     display: flex;
     flex-wrap: wrap;
 }
@@ -655,7 +653,7 @@ body {
 .team-member-img img {
     width: 100%;
     height: 100%;
-    object-fit: contain;
+    object-fit: cover;
     filter: brightness(.8);
 }
 
