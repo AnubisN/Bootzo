@@ -511,7 +511,7 @@ body {
 }
 .testi-item h3,
 .testi-item p{
-    font-size: 1rem
+    font-size: 1.2rem;
 }
 .testi-item h3{
     text-transform: capitalize;
